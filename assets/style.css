@@ -19,6 +19,7 @@ html, body {
   align-items: center;
   flex-direction: column;
   row-gap: 10px;
+  background-color: aquamarine;
 }
 .container .generated_passwd {
   min-height: 55px;
@@ -29,6 +30,7 @@ html, body {
   padding: 7px;
   border-radius: 10px;
   text-align: center;
+  background-color: white;
 }
 .container input {
   width: 100px;
