@@ -17,48 +17,80 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    row-gap: 10px;
+    // flex-direction: column;
+    // row-gap: 10px;
     background-color: aquamarine;
 
-    .generated_passwd{
-        min-height: 55px;
-        border: 1px solid black;
-        min-width: 220px;
-        max-width: 99%;
-        font-size: 30px;
-        padding: 7px ;
-        border-radius: 10px;
-        text-align: center;
-        background-color: white;
+    .generator{
+        display: flex;
+        flex-direction: column;
+        min-width: 500px;
+        max-width: 700px;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px
+        ;
+        
+        
+
+        .generated_passwd{
+            min-height: 55px;
+            border: 1px solid black;
+            min-width: 300px;
+            max-width: 99%;
+            font-size: 30px;
+            padding: 7px ;
+            border-radius: 10px;
+            text-align: center;
+            background-color: white;
+            overflow: scroll;
+            scroll-behavior: smooth;
+            
+        }
+    
+        input{
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+            border: 1px solid red;
+            padding: 3px 7px;
+        }
+        input:focus{
+            outline: red;
+            border: 2px solid rgba(221, 2, 2, 0.884);
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            font-size: 17px;
+            border-radius: 9px;
+            transition: 1s;
+            background-color: aqua;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(104, 104, 240);
+            color: white;
+        }
+        label{
+            color: red;
+        }
     }
 
-    input{
-        width: 100px;
-        height: 30px;
+    .select{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        background-color: white;
+        padding: 10px;
+        border: 1px solid black;
         border-radius: 10px;
-        border: 1px solid red;
-        padding: 3px 7px;
-    }
-    input:focus{
-        outline: red;
-        border: 2px solid rgba(221, 2, 2, 0.884);
-    }
-    button{
-        width: 200px;
-        height: 50px;
-        font-size: 17px;
-        border-radius: 9px;
-        transition: 1s;
-        background-color: aqua;
-        cursor: pointer;
-    }
-    button:hover{
-        background-color: rgb(104, 104, 240);
-        color: white;
-    }
-    label{
-        color: red;
+        label{
+            margin-right: 10px;
+            font-size: 20px;
+            width: 100px;
+            display: inline-block;
+        }
     }
     
 }

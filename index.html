@@ -9,21 +9,42 @@
 </head>
 <body>
     <div class="container">
-        <h1>Generated Password</h1>
-        <div class="generated_passwd"></div>
-        <label for="passwdLength">
-            Kod uzunluğu
-        </label>
-        <input type="text" id="passwdLength">
-        <button id="generate">Generate password</button>
-        
+        <div class="generator">
+            <h1>Generated Password</h1>
+            <div class="generated_passwd"></div>
+            <label for="passwdLength">
+                Kod uzunluğu
+            </label>
+            <input type="text" id="passwdLength">
+            <button id="generate">Generate password</button>
+        </div>
+
+        <div class="select">
+            <span>
+                <label for="bigLetter">Big Letter</label>
+                <input type="checkbox" id="bigLetter">
+            </span>
+
+            <span>
+                <label for="smallLetter">Small Letter</label>
+                <input type="checkbox" id="smallLetter">
+            </span>
+            <span>
+                <label for="number">Numbers</label>
+                <input type="checkbox" id="number">
+            </span>
+            <span>
+                <label for="symbol">Symbols</label>
+                <input type="checkbox" id="symbol">
+            </span>
+        </div>
     
-    </div>
-        
+    </div>       
 
     
     
   
-    <script src="JS/js.js"></script>    
+    <!-- <script src="JS/js.js"></script>     -->
+    <script src="JS/jsextra.js"></script>    
 </body>
 </html>
