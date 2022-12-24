@@ -50,6 +50,7 @@ html, body {
   border-radius: 9px;
   transition: 1s;
   background-color: aqua;
+  cursor: pointer;
 }
 .container button:hover {
   background-color: rgb(104, 104, 240);
