@@ -38,7 +38,7 @@ html,body{
             border: 1px solid black;
             min-width: 300px;
             max-width: 99%;
-            font-size: 30px;
+            font-size: 25px;
             padding: 7px ;
             border-radius: 10px;
             text-align: center;
@@ -48,17 +48,17 @@ html,body{
             
         }
     
-        input{
-            width: 100px;
-            height: 30px;
-            border-radius: 10px;
-            border: 1px solid red;
-            padding: 3px 7px;
-        }
-        input:focus{
-            outline: red;
-            border: 2px solid rgba(221, 2, 2, 0.884);
-        }
+        // input{
+            // width: 100px;
+            // height: 30px;
+            // border-radius: 10px;
+            // border: 1px solid red;
+            // padding: 3px 7px;
+        // }
+        // input:focus{
+        //     outline: red;
+        //     border: 2px solid rgba(221, 2, 2, 0.884);
+        // }
         button{
             width: 200px;
             height: 50px;
@@ -74,6 +74,12 @@ html,body{
         }
         label{
             color: red;
+            span{
+                width: 30px;
+                height: 30px;
+                // background-color: rgb(156, 10, 10);
+                display: inline-block;
+            }
         }
     }
 

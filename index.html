@@ -13,9 +13,9 @@
             <h1>Generated Password</h1>
             <div class="generated_passwd"></div>
             <label for="passwdLength">
-                Kod uzunluğu
+                Kod uzunluğu <span class="rangeNumber"></span>
             </label>
-            <input type="text" id="passwdLength">
+            <input type="range" id="passwdLength" min="6" max="60" value="6" onchange="onChange()">
             <button id="generate">Generate password</button>
         </div>
 
@@ -45,6 +45,7 @@
     
   
     <!-- <script src="JS/js.js"></script>     -->
-    <script src="JS/jsextra.js"></script>    
+    <!-- <script src="JS/jsextra.js"></script>     -->
+    <script src="JS/jsextraRange.js"></script>    
 </body>
 </html>

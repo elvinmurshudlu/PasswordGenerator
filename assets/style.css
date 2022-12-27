@@ -33,24 +33,13 @@ html, body {
   border: 1px solid black;
   min-width: 300px;
   max-width: 99%;
-  font-size: 30px;
+  font-size: 25px;
   padding: 7px;
   border-radius: 10px;
   text-align: center;
   background-color: white;
   overflow: scroll;
   scroll-behavior: smooth;
-}
-.container .generator input {
-  width: 100px;
-  height: 30px;
-  border-radius: 10px;
-  border: 1px solid red;
-  padding: 3px 7px;
-}
-.container .generator input:focus {
-  outline: red;
-  border: 2px solid rgba(221, 2, 2, 0.884);
 }
 .container .generator button {
   width: 200px;
@@ -67,6 +56,11 @@ html, body {
 }
 .container .generator label {
   color: red;
+}
+.container .generator label span {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
 }
 .container .select {
   display: flex;

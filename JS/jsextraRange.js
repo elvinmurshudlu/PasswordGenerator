@@ -11,15 +11,15 @@ function generatePasswd(){
     let symCheck = document.querySelector("#symbol")
     let numCheck = document.querySelector("#number")
     let length = +(document.querySelector("#passwdLength").value)
-    if(length <6){
-        alert("Kodun uzunluğu 6 dan böyük olmalıdır")
-        return
+    // if(length <6){
+    //     alert("Kodun uzunluğu 6 dan böyük olmalıdır")
+    //     return
          
-    }
-    if(length >60){
-        alert("Kodun uzunluğu 60 dan böyük olmamalıdır")
-        return
-    } 
+    // }
+    // if(length >60){
+    //     alert("Kodun uzunluğu 60 dan böyük olmamalıdır")
+    //     return
+    // } 
 
 
     if(bigCheck.checked){
@@ -72,6 +72,21 @@ function generatePasswd(){
 }
 
 
+// function rangeNumber(){
+//     let numberRange = document.querySelector(".rangeNumber")
+//     let input = +(document.querySelector("#passwdLength").value)
+//     numberRange.innerHTML = input
+//     return
+    
+// }
+
+function onChange(){
+    let numberRange = document.querySelector(".rangeNumber")
+    numberRange.innerHTML = +(document.querySelector("#passwdLength").value) 
+}
+
+// let inputRange = document.querySelector("#passwdLength")
+// inputRange.addEventListener("checked",rangeNumber)
 
 let button = document.querySelector("#generate")
 button.addEventListener("click",generatePasswd)
